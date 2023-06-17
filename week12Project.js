@@ -58,7 +58,7 @@ function updateBird(e) {
 
 $("#updateForm").on("submit", (e) => {
   updateBird(e);
-  $("#updateForm").reset();
+  document.getElementById("updateForm").reset();
 });
 
 /**DELETE */
