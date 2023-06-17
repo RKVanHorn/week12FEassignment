@@ -56,8 +56,8 @@ function updateBird(e) {
     .then($("#updateModal").modal("hide"));
 }
 
-$("#updateForm").on("submit", () => {
-  updateBird;
+$("#updateForm").on("submit", (e) => {
+  updateBird(e);
   $("#updateForm").reset();
 });
 
