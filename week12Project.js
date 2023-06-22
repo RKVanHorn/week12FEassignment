@@ -2,7 +2,7 @@ const URL_ENDPOINT = "https://648b4e4317f1536d65eac305.mockapi.io/api/birddb";
 
 /**CREATE */
 
-$("#submitButton").on("click", () => {
+$("#addForm").on("submit", () => {
   $.post(URL_ENDPOINT, {
     birdName: $("#birdInput").val(),
     date: $("#dateInput").val(),
